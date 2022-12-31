@@ -123,7 +123,7 @@ slash.handle("activity", (d) => {
     })
     .then((inv) => {
       return d.reply(
-        `[Click here to start ${activity.name} in ${channel.name}.](<https://discord.gg/${inv.code}>)`
+        `**[Click here](https://discord.gg/${inv.code})** to start ${activity.name} in ${channel.name}.`
       );
     })
     .catch((e) => {
@@ -134,9 +134,7 @@ slash.handle("activity", (d) => {
 
 slash.handle("invite", (d) => {
   return d.reply(
-    `• [Click here to invite.](<https://discord.com/api/oauth2/authorize?client_id=819835984388030464&permissions=1&scope=applications.commands%20bot>)\n` +
-      `• [Check out Source Code.](<https://github.com/DjDeveloperr/ActivitiesBot>)\n` +
-      `• Originally made by [Advaith](<https://github.com/advaith1>) ([Activites Bot](<https://github.com/advaith1/Activities>)), this is a port to Deno Deploy.`,
+    `This isn't a public bot\nGet yours today: https://github.com/advaith1/Activities>`,
     { ephemeral: true },
   );
 });
