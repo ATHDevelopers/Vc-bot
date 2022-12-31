@@ -134,7 +134,7 @@ slash.handle("activity", (d) => {
 
 slash.handle("invite", (d) => {
   return d.reply(
-    `This isn't a public bot\nGet yours today: https://github.com/advaith1/Activities>`,
+    `This isn't a public bot\nGet yours today: https://github.com/advaith1/Activities`,
     { ephemeral: true },
   );
 });
